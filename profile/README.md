@@ -13,4 +13,4 @@ Finally, please don't hesitate to get in touch with us in any of the following w
 
 Hope to meet you soon!
 
-![banner](https://github.com/maestro-org/.github/blob/main/profile/banner.png)
+![banner](https://github.com/maestro-org/.github/assets/10456493/cf901e4d-841c-4850-bf3e-cea165689d4d)
