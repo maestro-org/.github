@@ -6,7 +6,7 @@ Our team is building the most advanced data and infrastructure platform for Bitc
 
 We welcome you to contribute to our many open source tools, try out our [Platform](https://www.gomaestro.org/dapp-platform) or read through our [documentation.](https://docs.gomaestro.org/)
 
-Finally, please don't hesitate to get in touch with us in any of the following ways:
+Please don't hesitate to get in touch with us in any of the following ways:
 
 - [support@gomaestro.org](https://mailto:support@gomaestro.org)
     
