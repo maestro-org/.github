@@ -1,7 +1,5 @@
 ## Overview
 
-### Why Maestro?
-
 Maestro is a blockchain infrastructure platform built for developers working on UTXO chains. We specialize in delivering scalable APIs, data services, and indexing solutions across Bitcoin, Cardano, Dogecoin, and others.
 
 Unlike traditional node providers or fragmented explorers, Maestro combines open source tools and production-grade managed services, enabling teams to build faster, more reliably, and with less overhead.
