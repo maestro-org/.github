@@ -14,15 +14,15 @@ Our infrastructure is designed for high availability, low latency, and real-time
 
 -   \[Explore APIs] [Explore the full Maestro API suite](https://docs.gomaestro.org)
 
--   \[Bitcoin](https://docs.gomaestro.org/bitcoin)
+-   [Bitcoin](https://docs.gomaestro.org/bitcoin)
 
--   \[Cardano](https://docs.gomaestro.org/cardano)
+-   [Cardano](https://docs.gomaestro.org/cardano)
 
--   \[Dogecoin](https://docs.gomaestro.org/dogecoin)
+-   [Dogecoin](https://docs.gomaestro.org/dogecoin)
 
--   \[Arch Network](https://docs.gomaestro.org/arch-network)
+-   [Arch Network](https://docs.gomaestro.org/arch-network)
 
--   \[Midnight](https://docs.gomaestro.org/midnight)
+-   [Midnight](https://docs.gomaestro.org/midnight)
 
 </details>
 
