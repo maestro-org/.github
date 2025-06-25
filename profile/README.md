@@ -81,6 +81,8 @@ Maestro supports open-source development, and we'd like to acknowledge the follo
 -   [Contribute to Maestro's open-source ICP metaprotocol canister](https://github.com/maestro-org/bitcoin-metaprotocols-canister)
     -->
 
+More coming soon!
+
 </details>
 
 <details><summary>Community</summary>
