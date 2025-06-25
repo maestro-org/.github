@@ -68,11 +68,20 @@ Our infrastructure is designed for high availability, low latency, and real-time
 
 </details>
 
-<!-- <details><summary>Contributing</summary>
+<details><summary>Contributing</summary>
 
+##### Open Source Partners
+
+Maestro supports open-source development, and we'd like to acknowledge the following teams for their contributions:
+
+-   [Midl](https://midl.xyz/)
+
+<!--
 -   [Contribute to Maestro's open-source Indexer - Maestro Symphony](https://github.com/maestro-org/maestro-symphony)
+-   [Contribute to Maestro's open-source ICP metaprotocol canister](https://github.com/maestro-org/bitcoin-metaprotocols-canister)
+    -->
 
-</details> -->
+</details>
 
 <details><summary>Community</summary>
 
