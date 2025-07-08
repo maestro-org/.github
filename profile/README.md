@@ -6,6 +6,8 @@ Unlike traditional node providers or fragmented explorers, Maestro combines open
 
 Our infrastructure is designed for high availability, low latency, and real-time blockchain event handling, supporting everything from basic queries to complex DeFi interactions, ordinals, and metaprotocol development.
 
+[![Star History Chart](https://api.star-history.com/svg?repos=maestro-org/maestro-symphony,maestro-org/maestro-mcp-server&type=Date)](https://www.star-history.com/#maestro-org/maestro-symphony&maestro-org/maestro-mcp-server&Date)
+
 ## Choose your path:
 
 <details><summary>Build with Maestro</summary>
