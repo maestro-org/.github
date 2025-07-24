@@ -81,7 +81,6 @@ Our infrastructure is designed for high availability, low latency, and real-time
 -   [Discord](https://discord.gg/zvXv3TxD)
 -   [LinkedIn](https://www.linkedin.com/company/gomaestro/)
 -   [support@gomaestro.org](https://mailto:support@gomaestro.org)
--   [Telegram](https://t.me/GoMaestroOrg)
 -   [X](https://x.com/GoMaestroOrg)
 
 </details>
