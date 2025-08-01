@@ -77,7 +77,7 @@ Our infrastructure is designed for high availability, low latency, and real-time
 -   [Contribute to Maestro's open-source ICP metaprotocol canister](https://github.com/maestro-org/maestro-bitcoin-metaprotocols-canister)
 -   [Contribute to Maestro's open-source indexer - Maestro Symphony](https://github.com/maestro-org/maestro-symphony)
 
-    <h3 align="center">Orchestrated with Maestro</span></h3>
+    <h3 align="center">Orchestrated with Maestro</h3>
     <table align="center" style="justify-content: center;align-items: center;display: flex;">
     <tr>
     <td align="center">
