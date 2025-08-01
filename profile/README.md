@@ -30,9 +30,12 @@ Our infrastructure is designed for high availability, low latency, and real-time
 
 <details><summary>Learn how to use Maestro services</summary>
 
--   [Market Price API + TradingView Charts](https://docs.gomaestro.org/bitcoin/maestro-market-price-api-and-tradingview-lightweight-charts-tutorial)
--   [Maestro MCP + Claude](https://docs.gomaestro.org/bitcoin/mcp-interact-with-bitcoin-via-an-llm)
--   [Best-in-Slot Migration Guide](https://docs.gomaestro.org/bitcoin/best-in-slot-migration-guide)
+-   [Market Price API + TradingView Charts](https://docs.gomaestro.org/bitcoin/tutorials-and-guides/maestro-market-price-api-and-tradingview-lightweight-charts-tutorial)
+-   [Maestro MCP + Claude](https://docs.gomaestro.org/bitcoin/tutorials-and-guides/mcp-interact-with-bitcoin-via-an-llm)
+-   [Best-in-Slot Migration Guide](https://docs.gomaestro.org/bitcoin/tutorials-and-guides/best-in-slot-migration-guide)
+-   [How to Add a Custom Index in Maestro Symphony](https://docs.gomaestro.org/bitcoin/tutorials-and-guides/how-to-add-a-custom-index-in-maestro-symphony)
+-   [Mempool.space Migration Guide](https://docs.gomaestro.org/bitcoin/tutorials-and-guides/mempool-space-migration-guide)
+-   [Configure Esplora Proxy with BDK](https://docs.gomaestro.org/bitcoin/tutorials-and-guides/configure-the-esplora-proxy-with-bdk)
 
 </details>
 
@@ -40,11 +43,10 @@ Our infrastructure is designed for high availability, low latency, and real-time
 
 <details><summary>Developer Resources</summary>
 
--   [API Postman Collection](https://www.postman.com/go-maestro/maestro-api)
+-   [Official Documentation](https://docs.gomaestro.org)
 -   [Bitcoin Block Explorer](https://explorer.gomaestro.org/bitcoin/mainnet/)
 -   [Platform](https://gomaestro.org/dapp-platform)
 -   [Developer Hub](https://gomaestro.org/documentation)
--   [Official Documentation](https://docs.gomaestro.org)
 -   [Service Status](https://status.gomaestro.org/)
 
 </details>
@@ -70,11 +72,30 @@ Our infrastructure is designed for high availability, low latency, and real-time
 
 </details>
 
-<!-- <details><summary>Contributing</summary>
+<details><summary>Contributing</summary>
 
--   [Contribute to Maestro's open-source Indexer - Maestro Symphony](https://github.com/maestro-org/maestro-symphony)
+-   [Contribute to Maestro's open-source ICP metaprotocol canister](https://github.com/maestro-org/maestro-bitcoin-metaprotocols-canister)
+-   [Contribute to Maestro's open-source indexer - Maestro Symphony](https://github.com/maestro-org/maestro-symphony)
 
-</details> -->
+    <h3 align="center">Orchestrated with Maestro</span></h3>
+    <table align="center" style="justify-content: center;align-items: center;display: flex;">
+    <tr>
+    <td align="center">
+    <img src="https://github.com/user-attachments/assets/c48fc3ce-e3ee-4d02-87a9-23ba800d2899" height="50px;" alt="MIDL" />
+    <br />
+    <a style="text-decoration:none;" href="https://midl.xyz/" target="_blank">MIDL</a>
+    </td>
+    <td align="center">
+    <img src="https://github.com/user-attachments/assets/f94eee28-bdb2-4673-977a-db504825a82a" height="50px;" alt="Liquidium" />
+    <br />
+    <a style="text-decoration:none;" href="https://liquidium.fi/" target="_blank">Liquidium</a>
+    </td>
+    </tr>
+    </table>
+
+More coming soon!
+
+</details>
 
 <details><summary>Community</summary>
 
