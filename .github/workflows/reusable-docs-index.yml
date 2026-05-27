@@ -1,0 +1,94 @@
+name: Reusable docs index
+
+on:
+  workflow_call:
+    inputs:
+      docs_directory:
+        description: Directory containing Markdown docs.
+        required: false
+        default: docs
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  docs-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Regenerate docs index
+        shell: bash
+        env:
+          DOCS_DIR: ${{ inputs.docs_directory }}
+        run: |
+          set -euo pipefail
+
+          if [ ! -d "$DOCS_DIR" ]; then
+            echo "No $DOCS_DIR directory found; nothing to index."
+            exit 0
+          fi
+
+          tmp="$(mktemp)"
+          {
+            echo "# Docs index"
+            echo
+            echo 'Auto-maintained by the `docs-index-update` skill. Edit individual docs, not this file.'
+            echo
+            echo "## Entries"
+            echo
+
+            find "$DOCS_DIR" -name '*.md' ! -name 'INDEX.md' | sort | while IFS= read -r file; do
+              title="$(sed -n 's/^# //p' "$file" | head -n 1)"
+              if [ -z "$title" ]; then
+                title="$(basename "$file" .md)"
+              fi
+
+              summary="$(awk '
+                /^# / && !seen_title { seen_title = 1; next }
+                seen_title && NF && $0 !~ /^#/ {
+                  gsub(/[[:space:]]+/, " ")
+                  print
+                  exit
+                }
+              ' "$file")"
+
+              if [ "${#summary}" -gt 150 ]; then
+                summary="${summary:0:147}..."
+              fi
+
+              link="${file#"$DOCS_DIR"/}"
+              if [ -n "$summary" ]; then
+                printf -- "- [%s](%s) — %s\n" "$title" "$link" "$summary"
+              else
+                printf -- "- [%s](%s)\n" "$title" "$link"
+              fi
+            done
+          } > "$tmp"
+
+          if [ -f "$DOCS_DIR/INDEX.md" ] && cmp -s "$tmp" "$DOCS_DIR/INDEX.md"; then
+            echo "docs index is already current"
+            rm "$tmp"
+          else
+            mv "$tmp" "$DOCS_DIR/INDEX.md"
+          fi
+
+      - name: Open docs index PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: self-improvement/docs-index
+          commit-message: "docs: refresh INDEX.md"
+          title: "docs: refresh INDEX.md"
+          body: |
+            ## Summary
+            - Regenerated the docs index from the current Markdown files.
+
+            ## Test plan
+            - [x] Regenerated `docs/INDEX.md`
+
+            ## Links
+            Self-improvement: docs-index
+          labels: self-improvement
+          draft: true

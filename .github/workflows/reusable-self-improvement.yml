@@ -1,0 +1,27 @@
+name: Reusable self-improvement
+
+on:
+  workflow_call:
+    inputs:
+      goal:
+        description: Goal for the self-improvement agent.
+        required: false
+        default: Survey the repository and propose one focused improvement PR.
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  self-improvement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Not yet configured
+        env:
+          GOAL: ${{ inputs.goal }}
+        run: |
+          echo "::error::Reusable self-improvement is not wired to a code agent yet."
+          echo "Requested goal: $GOAL"
+          echo "Wire this workflow to Claude Code Action or another GitHub-native agent before enabling scheduled all-job runs."
+          exit 1
