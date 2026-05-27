@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Regenerate docs index
         shell: bash
@@ -76,9 +78,9 @@ jobs:
           fi
 
       - name: Open docs index PR
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
-          branch: self-improvement/docs-index
+          branch: self-improvement/docs-index/${{ github.ref_name }}
           commit-message: "docs: refresh INDEX.md"
           title: "docs: refresh INDEX.md"
           body: |
@@ -90,5 +92,6 @@ jobs:
 
             ## Links
             Self-improvement: docs-index
+            Base ref: `${{ github.ref_name }}`
           labels: self-improvement
           draft: true
