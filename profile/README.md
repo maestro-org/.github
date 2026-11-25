@@ -23,4 +23,4 @@ We specialize in delivering scalable infrastructure and carefully curated yield 
 
 </details>
 
-<img src="https://github.com/user-attachments/assets/c131f3a9-7e09-437f-a150-1e6bf9d9768e?raw=true" alt="banner">
+<img src="https://raw.githubusercontent.com/maestro-org/.github/main/profile/maestro-logo.png" alt="banner">
